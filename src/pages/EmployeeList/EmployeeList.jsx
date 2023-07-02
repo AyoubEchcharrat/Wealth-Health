@@ -45,7 +45,7 @@ function EmployeeList() {
                 },
 
             ],[])
-        const data = JSON.parse(localStorage.getItem('WealthHealthEmployees'));
+        const data = JSON.parse(localStorage.getItem('WealthHealthEmployees')) || [];
 
     return (
         <div className='body-page'>
