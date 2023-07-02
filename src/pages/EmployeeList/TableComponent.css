@@ -1,0 +1,53 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+table {
+    border-spacing: 0;
+    border: 1px solid #ededed;
+}
+thead tr {
+    background-color: #ededed;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table th,
+table td {
+    margin: 0;
+    padding: 6px 25px 6px 6px;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    position: relative;
+}
+table th:last-child,
+table td:last-child {
+    border-right: 0;
+}
+table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+  
+table th::before {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+table th.sort-asc::before {
+    border-bottom: 5px solid #22543d;
+}
+table th.sort-desc::before {
+    border-top: 5px solid #22543d;
+}
+table tr {
+    height: 55px;
+}  
+input.search-employee-list-input {
+    width: 500px;
+}
