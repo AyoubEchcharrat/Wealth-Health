@@ -8,6 +8,7 @@ function CreateEmployee() {
             <div className='navigate-link'>
                 <Link to='/employee-list'> ← View Current Employees</Link>
             </div>
+            <h2>Create Employee</h2>
             <FormComponent/>
         </div>
     );

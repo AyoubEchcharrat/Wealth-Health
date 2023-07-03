@@ -46,13 +46,17 @@ function EmployeeList() {
 
             ],[])
         const data = JSON.parse(localStorage.getItem('WealthHealthEmployees')) || [];
-
+        const initialState = {
+            pageSize: 10,
+            pageIndex: 0
+          };
     return (
         <div className='body-page'>
             <div className='navigate-link'>
                 <Link to='/'> + Add employee</Link>
             </div>
-            <TableComponent columns={columns} data={data} />
+            <h2>Current Employees</h2>
+            <TableComponent columns={columns} data={data} initialState={initialState}/>
         </div>
     )
 }

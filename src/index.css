@@ -12,6 +12,25 @@ code {
     monospace;
 }
 
+h1 {
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  color: #313131;
+  font-weight: 100;
+}
+
+h1,h2{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #313131;
+}
+
 input {
   height: 35px;
   border: 1px solid lightgrey;
@@ -35,11 +54,15 @@ label {
 
 .navigate-link{
   padding: 10px 20px;
+  margin-top: 10px;
 }
 
-a{
+a {
   text-decoration: none;
-    color: darkgrey;
+  color: white;
+  padding: 5px 30px 9px;
+  background: #528dc9;
+  border-radius: 25px;
 }
 
 input[type="submit"] {

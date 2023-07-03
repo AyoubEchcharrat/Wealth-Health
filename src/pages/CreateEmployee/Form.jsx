@@ -177,7 +177,7 @@ function FormComponent() {
           />
         </section>                          
         <input type="submit" />
-        <ModalPlugin width='230px' height='100px' toggleModal={toggleModal} setToggleModal={setToggleModal}
+        <ModalPlugin overlay width='230px' height='100px' toggleModal={toggleModal} setToggleModal={setToggleModal}
                 colorBG={'#eee'} >
                 <p>New employee added !</p>
         </ModalPlugin>

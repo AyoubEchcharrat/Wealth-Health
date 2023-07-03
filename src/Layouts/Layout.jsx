@@ -3,7 +3,11 @@ import { Outlet } from 'react-router-dom';
 
 function Layout() {
     return (
-        <Outlet/>
+        <div>
+            <h1>HRnet</h1>
+            <Outlet/>
+        </div>
+
     )
 }
 

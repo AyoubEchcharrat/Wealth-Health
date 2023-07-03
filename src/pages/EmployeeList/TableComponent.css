@@ -1,7 +1,9 @@
 .table-container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    justify-content: center;
+    max-width: 1144px;
+    margin: 50px auto;
 }
 table {
     border-spacing: 0;
@@ -16,7 +18,7 @@ table tr:last-child td {
 table th,
 table td {
     margin: 0;
-    padding: 6px 25px 6px 6px;
+    padding: 6px 20px 6px 6px;
     border-bottom: 1px solid #ededed;
     border-right: 1px solid #ededed;
     position: relative;
@@ -49,5 +51,10 @@ table tr {
     height: 55px;
 }  
 input.search-employee-list-input {
-    width: 500px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.pagination {
+    margin: 0 auto;
 }
